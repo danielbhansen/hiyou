@@ -69,8 +69,12 @@ let affirmations = [
     "You are my best friend.",
     "You make my life better in every way.",
     "Waking up next to you is the best part of my day.",
-    "You are inspiring."
-
+    "You are inspiring.",
+    "I appreciate everything you do for our family.",
+    "I believe in you.",
+    "My magnet for you is crazy strong. :)",
+    "Dook dook.",
+    "Returning to you is one my favourite things."
 ];
 
 let heartThings = [

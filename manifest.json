@@ -6,9 +6,9 @@
     "background_color": "#f7edf0",
     "display": "fullscreen",
     "orientation": "portrait",
-    "id": "https://danielhansen.ca/hiyou/",
-    "scope": "https://danielhansen.ca/hiyou/",
-    "start_url": "https://danielhansen.ca/hiyou/",
+    "id": "https://danielbhansen.github.io/hiyou/",
+    "scope": "https://danielbhansen.github.io/hiyou/",
+    "start_url": "https://danielbhansen.github.io/hiyou/",
     "icons": [
         {
           "src": "icon.png",

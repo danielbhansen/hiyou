@@ -1,6 +1,5 @@
-const hiyouapp = "hi-you-v1"
+const hiyouapp = "hi-you-v1.1"
 const assets = [
-  "https://danielhansen.ca/hiyou/",
   "https://danielhansen.ca/hiyou/index.html",
   "https://danielhansen.ca/hiyou/style.css",
   "https://danielhansen.ca/hiyou/script.js",
@@ -14,6 +13,18 @@ self.addEventListener("install", installEvent => {
     caches.open(hiyouapp).then(cache => {
       cache.addAll(assets)
     })
+  )
+})
+
+self.addEventListener("activate", event => {
+  event.waitUntil(
+    caches.keys().then(keys => Promise.all(
+      keys.map(key => {
+        if (key !== phrfApp) {
+          return caches.delete(key);
+        }
+      })
+    ))
   )
 })
 

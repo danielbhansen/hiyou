@@ -1,0 +1,136 @@
+@font-face {
+    font-family: 'lora';
+    src: url(lora.ttf);
+}
+html, body {
+    font-family: 'lora';
+    text-align: center;
+    background-color: #f7edf0;
+    margin: 0;
+    height: 100%;
+    color: #554b4d;
+    display: flow-root;
+}
+h1, h2, h3, h4, h5 {
+    font-weight: normal;
+}
+#app {
+    width: 100%;
+    max-width: 450px;
+    margin: 10vw auto 7vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    max-height: 650px;
+}
+h1 {
+    margin-bottom: 50px;
+}
+p {
+    margin: 0;
+}
+.affirmation {
+    font-size: 1.3rem;
+    height: 10em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: all 150ms ease-in-out;
+    width: 66vw;
+}
+.button {
+    background-color: #f2d0d9;
+    border: none;
+    border-radius: 5px;
+    padding: 1em 2em;
+    cursor: pointer;
+    transition: all 150ms ease;
+    font-family: 'lora';
+    margin-top: auto;
+    color: #635558;
+    font-size: 1rem;
+}
+.button:hover {
+    background-color: #f6dfe6;
+}
+.heart-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    perspective: 200px;
+}
+.shadow {
+    border-radius: 100%;
+    width: 65px;
+    height: 10px;
+    background-color: rgba(0,0,0,0.1);
+    bottom: -10px;
+    animation: shadow 2s ease-in-out infinite;
+}
+.shadow.paused {
+    animation: none;
+}
+@keyframes shadow {
+    50% {
+        width: 55px;
+        opacity: 0.75;
+    }
+}
+/* Animations */
+.waiting {
+    animation: waiting 2s ease-in-out infinite;
+}
+@keyframes waiting {
+    50% {
+        transform: translateY(-10px);
+    }
+}
+.beat {
+    animation: beat 300ms ease-in-out 2;
+}
+@keyframes beat {
+    from {
+        transform: scale(1.15);
+    }
+
+}
+.wiggle {
+    animation: wiggle 500ms ease-in-out;
+}
+@keyframes wiggle {
+    16% {
+        transform: translateX(7px);
+    }
+    32% {
+        transform: translateX(-7px);
+    }    
+    48% {
+        transform: translateX(4px);
+    }    
+    64% {
+        transform: translateX(-4px);
+    
+    }
+}
+.spin {
+    animation: spin 2s ease-in-out;
+}
+@keyframes spin {
+    to {
+        transform: rotateY(1800deg);
+
+    }
+}
+
+.backflip {
+    animation: backflip 1.5s ease-in-out;
+}
+@keyframes backflip {
+
+    50% {
+        transform: translateY(-50px) rotateX(180deg);
+    }
+
+} 

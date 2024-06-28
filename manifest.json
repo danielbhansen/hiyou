@@ -1,0 +1,19 @@
+{
+    "name": "Hi You.",
+    "short_name": "Hi You.",
+    "description": "I like you",
+    "theme_color": "#e31344",
+    "background_color": "#f7edf0",
+    "display": "fullscreen",
+    "orientation": "portrait",
+    "id": "https://danielhansen.ca/hiyou/",
+    "scope": "https://danielhansen.ca/hiyou/",
+    "start_url": "https://danielhansen.ca/hiyou/",
+    "icons": [
+        {
+          "src": "icon.png",
+          "type": "image/png",
+          "sizes": "512x512"
+        }
+    ]
+  }
